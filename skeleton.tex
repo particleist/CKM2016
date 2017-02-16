@@ -15,7 +15,7 @@
         LPNHE, Universit\'{e} Pierre et Marie Curie, Universit\'{e} Paris Diderot, CNRS/IN2P3, Paris, France\\
         E-mail: \email{vgligoro@lpnhe.in2p3.fr}\\
         \speaker{Dean Robinson}\\
-        Cincinatti\\
+        Cincinnati\\
         E-mail: \email{dean.robinson@uc.edu}\\
         }
 
@@ -33,9 +33,16 @@
 \begin{document}
 
 \input{introduction}
-\input{phis}
-\input{deltag}
-\input{deltam}
+
+%\input{phis}
+%\input{deltag}
+%\input{deltam}
+% ale: I think it makes more sense to have phi_s and deltaGamma_s in one section:
+\input{phis-deltags}
+% and one section for Deltam_d,s and DeltaGamma_d:
+\input{deltam-deltagd}
+% (this reflects better the structure of the talks IMHO)
+
 \input{alpha}
 \input{beta}
 \input{gamma}
@@ -44,4 +51,30 @@
 %\bibliographystyle{PoS}
 \bibliography{skeleton}
 
+
+\begin{thebibliography}{99}
+
+% I'm not citing this, but I put it here just in case
+%\bibitem{atlas_phis_7TeV}
+%  G.~Aad \emph{et al.} (ATLAS Collaboration),
+%  \emph{Flavor tagged time-dependent angular analysis of the $B^0_s \to J/\psi \phi$ decay
+%    and extraction of $\Delta\Gamma_s$ and the weak phase $\phi_s$ in ATLAS},
+%  \emph{Phys.~Rev.~D} {\bf 90}, 052007 (2014) [{\tt arXiv:1407.1796 hep-ex}].
+
+\bibitem{atlas_phis_8TeV}
+  G.~Aad \emph{et al.} (ATLAS Collaboration),
+  \emph{Measurement of the CP-violating phase $\phi_s$ and the $B^0_s$ meson decay width
+    difference with $B^0_s \to J/\psi \phi$ decays in ATLAS},
+  \emph{JHEP} {\bf 1608}, 147 (2016) [{\tt arXiv:1601.03297 hep-ex}].
+
+\bibitem{cms_phis}
+  V.~Khachatryan \emph{et al.} (CMS Collaboration),
+  \emph{Measurement of the CP-violating weak phase $\phi_s$ and the decay width difference
+    $\Delta\Gamma_s$ using the $B^0_s \to J/\psi \phi(1020)$ decay channel in pp collisions
+    at $\sqrt{s}$ = 8 TeV},
+  \emph{Phys.~Lett.~B} {\bf 757}, 97 (2016) [{\tt arXiv:1507.07527 hep-ex}].
+
+  
+\end{thebibliography}
+  
 \end{document}
