@@ -845,6 +845,7 @@ FUNCTION {inproceedings}
   format.authors "author" output.check
   format.title "title" output.check
   blank.sep
+  note output
   crossref missing$
     { format.in.ed.booktitle "booktitle" output.check
       format.bvolume output
@@ -862,7 +863,6 @@ FUNCTION {inproceedings}
   new.block
   format.eprint output
   new.block
-  % note output
   formatfull.doi output
   fin.entry
 }
